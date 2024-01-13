@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(46, 202, 158),rgb(80, 201, 195),rgb(104, 134, 193),rgb(9, 69, 152),rgb(21, 12, 113));
+    color: rgb(243, 247, 247);
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5% 5%;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 2%; /* Updated margin to percentage */
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form-control {
+    position: relative;
+    margin: 3% 0 6%; /* Updated margin to percentage */
+    width: 100%;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    padding: 10px 0; /* Adjusted padding */
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px; /* Added margin-bottom */
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 10px; /* Adjusted padding */
+    background-color: rgb(143, 196, 196);
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 6%; /* Updated margin to percentage */
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+    .form-control input:focus {
+        outline: none;
+        /* Remove any border */
+        box-shadow: none; /* Remove any box shadow */
+    }
+    
+
